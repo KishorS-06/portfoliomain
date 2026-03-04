@@ -46,15 +46,15 @@ const Hero = () => {
                 Kishor S
               </h1>
 
-              <p className="text-xl md:text-2xl font-semibold text-accent-glow">
-                Full Stack Developer
-              </p>
             </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
               B.Tech Computer Science and Business Systems student with a CGPA
-              of 8.04, specializing in MERN stack development and Business
-              Analytics. Passionate about building innovative web applications,
+              of 8.04, specializing in - 
+              <span className="text-lg md:text-l font-semibold text-accent-glow">
+               MERN stack development </span> and -
+              <span className="text-lg md:text-l font-semibold text-accent-glow">Business
+              Analytics</span>. Passionate about building innovative web applications,
               analyzing data-driven insights, and solving complex real-world
               problems.
             </p>

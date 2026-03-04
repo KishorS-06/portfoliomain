@@ -4,9 +4,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: <Github size={20} />, href: "#", label: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "#", label: "LinkedIn" },
-    { icon: <Mail size={20} />, href: "mailto:kishor.c2023.cse@sece.ac.in", label: "Email" },
+    { icon: <Github size={20} />, href: "https://github.com/KishorS-06", label: "GitHub" },
+    { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/kishor-s-365706291", label: "LinkedIn" },
+    { icon: <Mail size={20} />, href: "https://mail.google.com/mail/?view=cm&fs=1&to=kishorsakthinarayanan@gmail.com", label: "Email" },
     { icon: <Phone size={20} />, href: "tel:+919788114422", label: "Phone" }
   ];
 
@@ -15,6 +15,7 @@ const Footer = () => {
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Achievements", href: "#achievements" },
+    { name: "Internship", href: "#experience" },
     { name: "Contact", href: "#contact" }
   ];
 

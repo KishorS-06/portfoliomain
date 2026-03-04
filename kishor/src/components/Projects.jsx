@@ -65,14 +65,13 @@ const Projects = () => {
       gradient: "from-emerald-400 to-teal-500",
 
       github: "https://github.com/KishorS-06/Relivapp",
-      demo: "https://disaster-management-demo.vercel.app",
     },
 
     {
       title: "Startup Connect – Startup Collaboration Platform",
 
       description:
-        "An innovative disaster management platform that leverages crowd-sourcing to provide real-time updates during emergencies. Built with modern technologies for scalability and reliability.",
+        "A startup collaboration platform designed to connect startups, mentors, and investors. The system includes AI-powered matching, structured documentation workflows, and scalable architecture for startup ecosystem networking.",
 
       technologies: [
         "React.js",
@@ -84,20 +83,17 @@ const Projects = () => {
 
       features: [
         "AI-powered startup–investor matching system",
-    "Detailed BRD and FRD documentation for product workflows",
-    "User dashboards for startups, mentors, and investors",
-    "Structured test case design for system validation",
-    "Platform workflow analysis and requirement gathering",
-    "Scalable architecture for startup ecosystem networking",
+        "Detailed BRD and FRD documentation for product workflows",
+        "User dashboards for startups, mentors, and investors",
+        "Structured test case design for system validation",
+        "Platform workflow analysis and requirement gathering",
+        "Scalable architecture for startup ecosystem networking",
       ],
 
       icon: <Shield size={24} />,
       year: "2026",
       status: "On-Going",
       gradient: "from-emerald-400 to-teal-500",
-
-      github: "https://github.com/YOUR_USERNAME/disaster-management",
-      demo: "https://www.figma.com/design/dPD9YF8a8F4aSjZu8LKJde/Untitled?node-id=0-1&p=f&t=OvfZB6Ua2y8S1KQG-0",
     },
   ];
 
@@ -179,25 +175,29 @@ const Projects = () => {
                     {/* Buttons */}
                     <div className="flex space-x-4">
 
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-hero flex items-center"
-                      >
-                        <Github size={18} className="mr-2" />
-                        View Code
-                      </a>
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-hero flex items-center"
+                        >
+                          <Github size={18} className="mr-2" />
+                          View Code
+                        </a>
+                      )}
 
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-hero-outline flex items-center"
-                      >
-                        <ExternalLink size={18} className="mr-2" />
-                        Live Demo
-                      </a>
+                      {project.demo && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-hero-outline flex items-center"
+                        >
+                          <ExternalLink size={18} className="mr-2" />
+                          Live Demo
+                        </a>
+                      )}
 
                     </div>
                   </div>
